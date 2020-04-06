@@ -13,7 +13,7 @@
   
         <div class="post-details">
            <div class="post-actions">
-          <i class="fa fa-heart fa-2x post-like"></i>
+          <i class="fa fa-heart like-<%= post.id %> fa-2x post-like" data-id="<%= post.id%>"></i>
           <i class="fa fa-comment fa-2x post-commnet"></i>
         </div>
           <p><strong><%= post.total_likes %>Likes</strong></p>
