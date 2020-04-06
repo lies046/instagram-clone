@@ -1,8 +1,10 @@
 class Post < ApplicationRecord
+  default_scope { order created_at: :desc}
   mount_uploader :image, ImageUploader
   belongs_to :account
   before_create :set_active
   scope :active, -> {where active: true}
+  has_many :likes
 
   def total_likes
     0
