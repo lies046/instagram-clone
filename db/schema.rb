@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_06_045936) do
+ActiveRecord::Schema.define(version: 2020_04_06_072911) do
 
   create_table "accounts", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -51,6 +51,8 @@ ActiveRecord::Schema.define(version: 2020_04_06_045936) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.text "description"
+    t.integer "total_likes_count"
+    t.integer "total_comments_count"
     t.index ["account_id"], name: "index_posts_on_account_id"
   end
 
