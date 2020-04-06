@@ -8,7 +8,6 @@ class AccountsController < ApplicationController
   def profile
   end
 
-  private
   def set_account
     @account = Account.find_by_username(params[:username])
   end
