@@ -28,3 +28,18 @@ body{
 .profile-posts{
   margin-top: 50px;
 }
+
+.btn-custom{
+  background: transparent;
+  border:2px solid #ccc !important;
+  border-radius: 4px !important;
+  margin: 5px 20px;
+}
+
+.btn-custom:hover{
+  background: #ddd !important;
+}
+
+.m-r-15{
+  margin-right: 15px;
+}
