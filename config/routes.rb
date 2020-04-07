@@ -7,6 +7,6 @@ Rails.application.routes.draw do
   post  "follow/account" => "accounts#follow_account", as: :follow_account
 
   resources :posts, only:[:new, :create, :show]
-  resources :comment, only:[:create]
+  resources :comments, only:[:create]
   root to: "public#homepage"
 end
